@@ -1,0 +1,235 @@
+/* Project-header styles */
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    font-style: italic;
+}
+.container {
+    width: 100%;
+    height: 970px;
+    padding: 50px 68px 30px 65px;
+    margin: 0 auto;
+}
+.logo {
+    width: 164px;
+    float: right;
+    position: relative;
+}
+.logo__img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+}
+.title {
+    position: relative;
+}
+.header__title {
+    top: 190px;
+}
+.title__section-title {
+    width: 344px;
+    height: 103.72px;
+    background-image: url(../img/white-bg.svg);
+    position: relative;
+    left:8px;
+    top: 25px;
+    padding: 41px 16px 0 0;
+}
+.section-title__text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 70%;
+    text-align: center;
+    transform: rotate(-7.41deg);
+}
+.title__text {
+    font-weight: 500;
+    line-height: 125%;
+    color: #fff;
+}
+.title__text_size_l {
+    position: absolute;
+    font-size: 32px;
+    top: 435px;
+    left: 8px;
+    width: 690px;
+}
+/* Project-info styles */
+.project-info__title .title__main-title_size_m {
+    margin: 63px 0 0 23px;
+}
+.section-title_size_m {
+    top: -7px;
+    padding-right: 0;
+    margin-bottom: 33px;
+}
+.title__text-size-m {
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 8px;
+    width: 988px;
+}
+.title__text-dark {
+    font-weight: 400;
+    color: #ADADAD;
+    font-size: 18px;
+    line-height: 35px;
+
+}
+/*Project-comedians styles*/
+.project-comedians__title {
+    width: 512px;
+    left: 35.65%;
+    top: -10px;
+}
+.project-comedians__title .section-title {
+    top: -38px;
+    left: 168px;
+    padding-left: 13px;
+}
+.list {
+    width: 1290px;
+    margin: 5px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+}
+.list__image {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.list__name {
+    padding-left: 20px;
+    color: #FFFFFF;
+    line-height: 70%;
+    transform: rotate(-7.41deg);
+    font-weight: 600;
+}
+.list__name-firstname {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.list__name-lastname {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.project-comedians__text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    color:#fff;
+    text-align: center;
+    margin-top: 115px;
+}
+/* Events-announcements styles */
+.events-announcements__title {
+    width: 405px;
+    margin: 2px auto 65px;
+}
+.events-announcements__title .section-title {
+    background: url(../img/white-bg_long.svg);
+    top: -18px;
+    left: 5px;
+    padding-left: 16px;
+    width: 399px;
+}
+.events-announcements__slider-wrapper {
+    display: flex;
+    width: 1290px;
+    margin: 0 auto;
+    gap: 30px;
+}
+.slider__item {
+    width: 300px;
+    height: 421px;
+}
+.slider__item-image {
+    background: #000000;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    object-fit: contain;
+}
+.date-time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin: 20px auto 8px;
+    text-align: center;
+}
+.slider__item-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.slider__item-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 65px;
+    width: 191px;
+    height: 36px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 100px;
+    margin: 0 auto;
+    transition: .3s;
+}
+.slider__item-button:hover {
+    background: #ADADAD;
+}
+/* Contacts styles */
+.contacts__title {
+    width: 485px;
+    margin: 137px auto 60px;
+}
+.contacts__title .section-title {
+    top: -16px;
+    left: 72px;
+    padding-left: 15px;
+}
+.contacts__wrapper {
+    display: flex;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    margin:  0 auto;
+    gap: 200px;
+    justify-content: center;
+}
+.production-group-dark {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+    color: #ADADAD;
+}
+.contacts__contacts-dark {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+    color: #ADADAD;
+}
+.contacts__contacts_size_s {
+    font-size: 22px;
+    position: relative;
+    top: -17px;
+}
+.production-group {
+    width: 352px;
+}
+.contacts__contacts {
+    width: 264px;
+    line-height: 125%;
+}
