@@ -1,14 +1,31 @@
 /* Project-header styles */
-body {
+
+html {
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: 'Roboto';
     font-style: italic;
 }
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
 .container {
     width: 100%;
-    height: 970px;
+    height: 100vh;
     padding: 50px 68px 30px 65px;
     margin: 0 auto;
+}
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 .logo {
     width: 164px;
@@ -140,6 +157,9 @@ body {
     margin: 0 auto;
     gap: 30px;
 }
+.swiper-slide {
+    max-width: 300px;
+}
 .slider__item {
     width: 300px;
     height: 421px;
@@ -232,4 +252,215 @@ body {
 .contacts__contacts {
     width: 264px;
     line-height: 125%;
+}
+/*Fullpage slider*/
+nav {
+	position: fixed;
+	z-index: 100;
+    top: 455px;
+    right: 70px;
+}
+.section {
+    position: relative;
+	width: 100%;
+}
+#wrapper {
+	position: absolute;
+	top: 0;
+    transition: transform 1.5s cubic-bezier(.2,0,.3,1);
+}
+.slider {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #A4A4A4;
+    margin: 12px 0;
+    transition: 1.5s;
+}
+.active {
+    width: 50px;
+    height: 3px;
+    background: #FFFFFF;
+}
+.slide0 {transform: translateY(0%);}
+.slide1 {transform: translateY(-100%);}
+.slide2 {transform: translateY(-200%);}
+.slide3 {transform: translateY(-300%);}
+.slide4 {transform: translateY(-400%);}
+/* Swiper */
+.events-swiper {
+    width: 1290px;
+    height: 570px;
+    overflow: hidden;
+    margin: 0 auto;
+    user-select: none;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 3px !important;
+    background: #ffffff50;
+    max-width: 1290px;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+    bottom: 5px;
+}
+.swiper-scrollbar-drag {
+    height: 3px;
+    background-color: #fff;
+}
+/*--------*/
+@media (max-width:1350px) {
+    .section {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container {
+        max-width: 1350px;
+        padding: 20px 30px 30px 105px;
+    }
+    .header__title {
+        top: 170px;
+    }
+    .logo, .logo__img {
+        position: fixed;
+        right: 30px;
+    }
+    nav {
+        top: 295px;
+        right: 30px;
+    }    
+    .title__main-title_size_l {
+        width: 440px;
+    }
+    .section-title {
+        width: 199px;
+        height: 60px;
+    }
+    .title__section-title {
+        background-image: url(../img/white-bg_1350.svg);
+        background-repeat: no-repeat;
+        padding: 23px 0px 0 0;
+        top: 10px;
+    }
+    .section-title__text {
+        font-size: 20px;
+        line-height: 70%;
+    }
+    .title__text_size_l {
+        font-size: 20px;
+        width: 440px;
+        top: 265px;
+    }
+    .project-info__title .title__main-title_size_m {
+        width: 214px;
+        height: 78px;
+        margin: 80px 0 0 0;
+    }
+    .section-title_size_m {
+        width: 199px;
+        height: 60px;
+    }
+    .title__text-size-m {
+        font-size: 18px;
+        width: 660px;
+    }
+    .title__text-dark {
+        font-size: 16px;
+    }
+    .title__main-title_size_s {
+        width: 220px;
+        height: 80px;
+    }
+    .project-comedians__title {
+        left: 42%;
+    }
+    .project-comedians__title .section-title {
+        top:-20px;
+        left: 100px;
+    }
+    .list {
+        width: 1050px;
+        margin: 5px auto 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 30px;
+    }
+    .list__image {
+        width: 150px;
+        height: 150px;
+    }
+    .list__name-firstname {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    .list__name-lastname {
+        font-size: 16px;
+    }
+    .project-comedians__text {
+        font-size: 24px;
+        margin: 0;
+        position: relative;
+        top: -15px;
+    }
+    .events-announcements__title {
+        width: 251px;
+        margin-bottom: 45px;
+    }
+    .events-announcements__title .title__main-title_size_m {
+        width: 236px;
+        height: 86px;
+    }
+    .events-announcements__title .section-title {
+        background-image: url(../img/white-bg_long_1350.svg);
+        background-repeat: no-repeat;
+        width: 251px;
+        height: 66px;
+        padding-left:5px;
+    }
+    .events-swiper {
+        width: 1071px;
+        height: 400px;
+    }
+    .slider__item {
+        width: 240px;
+        height: 352px;
+    }
+    .slider__item-image {
+        width: 240px;
+        height: 240px;
+    }
+    .date-time {
+        margin: 10px auto 8px;
+    }
+    .contacts__title {
+        margin: 107px auto 100px;
+        width: 300px;
+        height:110px;
+    }
+    .title__main-title_size_mp {
+        width: 300px;
+        height: 110px;
+    }
+    .production-group-dark {
+        font-size: 16px;
+    }
+    .production-group {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .contacts__contacts-dark {
+        font-size: 16px;    
+    }
+    .contacts__contacts {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .contacts__contacts_size_s {
+        display: inline-block;
+        font-size: 16px;
+    }
+    .contacts__wrapper {
+        width: 645px;
+        gap: 33px;
+    }
 }
