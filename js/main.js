@@ -5,6 +5,7 @@ var slider = $('.slider'),
 	lengthDiv = slider.length,
 	delay = 300;
 
+if(!window.matchMedia('(max-width:768px)').matches){
     slider.on('click', function(e){
         var anchor = $(this);
         if(!animating){
@@ -40,6 +41,19 @@ var slider = $('.slider'),
         $(slider[current-1]).removeClass('active');
         $(slider[current+1]).removeClass('active');
     });
+} 
+
+document.querySelector('.project-comedians__more').addEventListener('click', () => {
+    document.querySelector('.list').style.maxHeight = '100%';
+    document.querySelector('.project-comedians__more').style.display = 'none';
+
+});
+document.querySelector('.events-announcements__more').addEventListener('click', () => {
+    document.querySelector('.events-swiper').style.minHeight = '1830px';
+    document.querySelector('.events-announcements__more').style.display = 'none';
+
+});
+
 let swiper = new Swiper('.events-swiper', {
     direction: 'horizontal',
     slidesPerView: 4,
@@ -53,24 +67,25 @@ let swiper = new Swiper('.events-swiper', {
       draggable: true
     },
     breakpoints: {
-        767: {
+        768: {
+        direction: 'horizontal',
         slidesPerView: 2,
         spaceBetween: 30,
         },
         480: {
             direction: 'vertical',
-            slidesPerView: 4,
-            spaceBetween: 180
+            slidesPerView: 'auto',
+            spaceBetween: 50
         },
         375: {
             direction: 'vertical',
-            slidesPerView: 4,
-            spaceBetween: 180
+            slidesPerView: 'auto',
+            spaceBetween: 50
         },
         320: {
             direction: 'vertical',
-            slidesPerView: 4,
-            spaceBetween: 180
+            slidesPerView: 'auto',
+            spaceBetween: 50
         }
     }
   });
