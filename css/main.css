@@ -638,5 +638,18 @@ nav ul {
         top: -9px;
         left: 4px;
     }
-    
+}
+@media (max-width: 320px) {
+    .header__title {
+        width: 300px;
+    }
+    .title__main-title_size_l {
+        width: 275px;
+    }
+    .title__text_size_l {
+        width: 283px;
+    }
+    .title__text-size-m {
+        width: 285px;
+    }
 }
