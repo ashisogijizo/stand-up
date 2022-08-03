@@ -66,6 +66,11 @@ let swiper = new Swiper('.events-swiper', {
             direction: 'vertical',
             slidesPerView: 4,
             spaceBetween: 180
+        },
+        320: {
+            direction: 'vertical',
+            slidesPerView: 4,
+            spaceBetween: 180
         }
     }
   });
