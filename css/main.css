@@ -625,12 +625,15 @@ nav ul {
         margin-left: auto;
     }
 }
+@media (max-width: 425px) {
+    .events-announcements__title .section-title {
+        left: 70px;
+    }
+}
 @media (max-width: 375px) {
     .project-comedians__title .section-title {
         top: -9px;
         left: 4px;
     }
-    .events-announcements__title .section-title {
-        left: 70px;
-    }
+    
 }
