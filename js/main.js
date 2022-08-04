@@ -8,7 +8,7 @@ var slider = $('.slider'),
 if(!window.matchMedia('(max-width:768px)').matches){
     slider.on('click', function(e){
         var anchor = $(this);
-        if(!animating){
+        if(animating) return;
             animating = true;
             current = anchor.parent().index();
             wrapper.removeClass().addClass('slide'+current);
@@ -16,7 +16,9 @@ if(!window.matchMedia('(max-width:768px)').matches){
                 animating = false;
             }, delay);
             e.preventDefault();
-        }
+            slider.removeClass('active');
+            $(slider[current]).addClass('active');
+
     });
 
     $(document).keydown(function(e){var key = e.keyCode;if(key == 38 || key == 40)e.preventDefault();});
@@ -37,19 +39,16 @@ if(!window.matchMedia('(max-width:768px)').matches){
         } else if(e.deltaY > 0 && current < lengthDiv - 1){
             $(slider[current + 1]).trigger('click');
         }
-        $(slider[current]).addClass('active');
-        $(slider[current-1]).removeClass('active');
-        $(slider[current+1]).removeClass('active');
     });
 } 
 
 document.querySelector('.project-comedians__more').addEventListener('click', () => {
-    document.querySelector('.list').style.maxHeight = '100%';
+    document.querySelector('.list').style.maxHeight = 'auto';
     document.querySelector('.project-comedians__more').style.display = 'none';
 
 });
 document.querySelector('.events-announcements__more').addEventListener('click', () => {
-    document.querySelector('.events-swiper').style.minHeight = '1830px';
+    document.querySelector('.events-swiper').style.maxHeight = 'auto';
     document.querySelector('.events-announcements__more').style.display = 'none';
 
 });
