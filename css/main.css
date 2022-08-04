@@ -82,8 +82,8 @@ html, body {
 .project-info {
     height: auto;
 }
-.project-info.container {
-    padding-bottom: 190px;
+.project-info__title {
+    margin-bottom: 17vh;
 }
 .project-info__title .title__main-title_size_m {
     margin: 63px 0 0 23px;
@@ -91,7 +91,7 @@ html, body {
 .section-title_size_m {
     margin-top: -7px;
     padding-right: 0;
-    margin-bottom: 33px;
+    margin-bottom: 3.4vh;
 }
 .title__text-size-m {
     font-weight: 600;
@@ -370,7 +370,7 @@ nav {
         padding: 20px 30px 30px 105px;
     }
     .header__title {
-        top: 170px;
+        top: 5.84vh;
     }
     .logo, .logo__img {
         position: fixed;
@@ -400,7 +400,7 @@ nav {
     .title__text_size_l {
         font-size: 20px;
         width: 440px;
-        top: 265px;
+        padding-left: 10px;
     }
     .project-info__title .title__main-title_size_m {
         width: 214px;
